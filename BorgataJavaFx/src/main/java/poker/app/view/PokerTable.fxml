@@ -10,18 +10,18 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="APMainScreen" prefHeight="600.0" prefWidth="1206.0" style="-fx-background-color: green;" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poker.app.view.PokerTableController">
+<AnchorPane fx:id="APMainScreen" prefHeight="600.0" prefWidth="1541.0" style="-fx-background-color: green;" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poker.app.view.PokerTableController">
    <children>
-      <BorderPane layoutX="-1.0" layoutY="-1.0" prefHeight="600.0" prefWidth="1206.0" style="-fx-background-color: green;">
+      <BorderPane layoutX="-1.0" layoutY="-1.0" prefHeight="600.0" prefWidth="1541.0" style="-fx-background-color: green;">
          <bottom>
             <AnchorPane prefHeight="107.0" prefWidth="800.0">
                <children>
-                  <HBox layoutX="396.0" layoutY="4.0" prefHeight="100.0" prefWidth="414.0">
+                  <HBox layoutX="564.0" layoutY="9.0" prefHeight="100.0" prefWidth="414.0">
                      <children>
-                        <GridPane prefHeight="21.0" prefWidth="315.0">
+                        <GridPane prefHeight="100.0" prefWidth="375.0">
                           <columnConstraints>
-                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="94.0" />
-                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="221.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="99.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.0" minWidth="10.0" prefWidth="274.0" />
                           </columnConstraints>
                           <rowConstraints>
                             <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
@@ -49,12 +49,12 @@
          <top>
             <AnchorPane prefHeight="107.0" prefWidth="800.0" BorderPane.alignment="CENTER">
                <children>
-                  <HBox layoutX="396.0" layoutY="4.0" prefHeight="100.0" prefWidth="414.0">
+                  <HBox layoutX="564.0" layoutY="4.0" prefHeight="100.0" prefWidth="414.0">
                      <children>
-                        <GridPane prefHeight="21.0" prefWidth="315.0">
+                        <GridPane prefHeight="100.0" prefWidth="375.0">
                            <columnConstraints>
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="94.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="221.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="99.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="281.0" minWidth="10.0" prefWidth="274.0" />
                            </columnConstraints>
                            <rowConstraints>
                               <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
@@ -73,14 +73,14 @@
             </AnchorPane>
          </top>
          <left>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="386.0" prefWidth="450.0" BorderPane.alignment="CENTER">
                <children>
-                  <HBox layoutX="15.0" layoutY="145.0" prefHeight="100.0" prefWidth="275.0">
+                  <HBox layoutX="15.0" layoutY="145.0" prefHeight="100.0" prefWidth="375.0">
                      <children>
-                        <GridPane prefHeight="21.0" prefWidth="315.0">
+                        <GridPane prefHeight="100.0" prefWidth="375.0">
                            <columnConstraints>
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="95.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="180.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="113.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="10.0" prefWidth="262.0" />
                            </columnConstraints>
                            <rowConstraints>
                               <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
@@ -99,14 +99,14 @@
             </AnchorPane>
          </left>
          <right>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="200.0" prefWidth="450.0" BorderPane.alignment="CENTER">
                <children>
-                  <HBox layoutY="145.0" prefHeight="100.0" prefWidth="275.0">
+                  <HBox layoutY="145.0" prefHeight="100.0" prefWidth="375.0">
                      <children>
                         <GridPane prefHeight="21.0" prefWidth="654.0">
                            <columnConstraints>
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="89.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="186.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="109.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" minWidth="10.0" prefWidth="264.0" />
                            </columnConstraints>
                            <rowConstraints>
                               <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
@@ -125,7 +125,7 @@
             </AnchorPane>
          </right>
          <center>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="200.0" prefWidth="550.0" BorderPane.alignment="CENTER">
                <children>
                   <HBox layoutX="151.0" layoutY="199.0" prefHeight="173.0" prefWidth="339.0">
                      <children>

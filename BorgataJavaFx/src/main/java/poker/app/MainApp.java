@@ -27,10 +27,13 @@ import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import jdk.internal.org.objectweb.asm.tree.analysis.Frame;
 import poker.app.view.PokerTableController;
 import poker.app.view.RootLayoutController;
 import pokerBase.Player;
 import pokerBase.Table;
+import java.awt.Dimension;
+
 
 public class MainApp extends Application {
 
@@ -38,6 +41,7 @@ public class MainApp extends Application {
 	private BorderPane rootLayout;	
 	private Table tbl;	
 	private int iGameType;
+	
 	
 	RootLayoutController rootController = null;
 	
@@ -48,8 +52,8 @@ public class MainApp extends Application {
 		tbl = new Table();
 		
 		BorderPane root = new BorderPane();
-		Scene scene = new Scene(root, 400, 400);
-
+		Scene scene = new Scene(root, 1600, 400);
+	    
 		this.primaryStage = primaryStage;
 		this.primaryStage.setTitle("Poker");
 
@@ -65,6 +69,7 @@ public class MainApp extends Application {
 
 	}
 
+	
 	public void initRootLayout() {
 		try {
 			// Load root layout from fxml file.

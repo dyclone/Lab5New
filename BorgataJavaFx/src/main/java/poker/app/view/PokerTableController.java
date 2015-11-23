@@ -53,6 +53,8 @@ import pokerEnums.eGameState;
 
 public class PokerTableController {
 
+	public static int game;
+	
 	@FXML
 	private Button btnToggle;
 	
@@ -251,8 +253,38 @@ public class PokerTableController {
 		HboxCommunityCards.getChildren().clear();
 
 		// Get the Rule, start the Game
-		Rule rle = new Rule(eGame.Omaha);
-		gme = new GamePlay(rle);
+		Rule rle = null;
+		
+		switch(game){
+		case 1:
+			rle = new Rule(eGame.FiveStud);
+			gme = new GamePlay(rle);
+			break;
+		case 2:
+			rle = new Rule(eGame.SevenDraw);
+			gme = new GamePlay(rle);
+			break;
+		case 3:
+			rle = new Rule(eGame.FiveStudOneJoker);
+			gme = new GamePlay(rle);
+			break;
+		case 4:
+			rle = new Rule(eGame.TexasHoldEm);
+			gme = new GamePlay(rle);
+			break;
+		case 5:
+			rle = new Rule(eGame.FiveStudTwoJoker);
+			gme = new GamePlay(rle);
+			break;
+		case 6:
+			rle = new Rule(eGame.Omaha);
+			gme = new GamePlay(rle);
+			break;
+		default: 
+			rle = new Rule(eGame.FiveStud);
+			gme = new GamePlay(rle);
+			break;
+		}
 
 		// Add the seated players to the game, create a GPPH for the player
 		for (Player p : mainApp.GetSeatedPlayers()) {
@@ -399,7 +431,32 @@ public class PokerTableController {
 
 			Hand WinningHand = Hand.PickBestHand(BestPlayerHands);
 			Player WinningPlayer = (Player) hsPlayerHand.get(WinningHand);
+			
+			if (WinningPlayer.getiPlayerPosition() == 1){
+				txtP1Name.setLayoutX(0);
+				txtP1Name.setLayoutY(0);
+				txtP1Name.setVisible(true);
+				
+			}
+			else if (WinningPlayer.getiPlayerPosition() == 2){
+				txtP2Name.setLayoutX(0);
+				txtP2Name.setLayoutY(0);
+				txtP2Name.setVisible(true);
+				
+			}
+			else if (WinningPlayer.getiPlayerPosition() == 3){
+				txtP3Name.setLayoutX(0);
+				txtP3Name.setLayoutY(0);
+				txtP3Name.setVisible(true);
+				
+			}
+			else 
+				txtP4Name.setLayoutX(0);
+				txtP4Name.setLayoutY(0);
+				txtP4Name.setVisible(true);
+			
 			System.out.println("Winning Player Position: " + WinningPlayer.getiPlayerPosition());
+			System.out.println("Winning hand: " + WinningHand.getHandStrength());
 			SetGameControls(eGameState.EndOfGame);
 
 		} else {
